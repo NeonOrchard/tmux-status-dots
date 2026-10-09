@@ -1,0 +1,21 @@
+{
+  "name": "tmux-status-dots",
+  "version": "0.1.0",
+  "description": "Shows Claude's state (working, needs you, idle, error) on its tmux window and iTerm2 tab",
+  "author": { "name": "Zero" },
+  "userConfig": {
+    "itermDot": {
+      "type": "boolean",
+      "title": "iTerm2 tab dot",
+      "description": "When tmux runs in iTerm2, show Claude's state as the colored dot on the iTerm2 tab. Uses iTerm2's own it2 tool. Turn off to leave iTerm2 alone.",
+      "default": true
+    },
+    "itermLayout": {
+      "type": "string",
+      "title": "iTerm2 tab layout",
+      "description": "two-line: the task on top, the state (working, waiting, idle) under it. one-line: the state goes after the task, like \"Fix login: working\" (needs #{@claude_label} in your tmux set-titles-string, see README).",
+      "options": ["two-line", "one-line"],
+      "default": "two-line"
+    }
+  }
+}

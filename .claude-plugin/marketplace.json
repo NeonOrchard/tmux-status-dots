@@ -1,0 +1,6 @@
+{
+  "name": "tmux-status-dots",
+  "description": "Claude's state as a colored dot on its tmux window and iTerm2 tab.",
+  "owner": { "name": "Neon Orchard" },
+  "plugins": [{ "name": "tmux-status-dots", "source": "./" }]
+}
